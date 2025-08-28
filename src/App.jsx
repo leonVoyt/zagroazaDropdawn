@@ -47,19 +47,13 @@ function App() {
             renderSelected={(val) => (
               <span>
                 <strong>{val.label}</strong>{" "}
-                <em style={{ color: "#888" }}>({val.group})</em>
+                <em className="option-group">({val.group})</em>
               </span>
             )}
             renderOption={(opt, isActive, isSelected) => (
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "100%",
-                }}
-              >
+              <div className="option-row">
                 <span>{opt.label}</span>
-                <span style={{ opacity: 0.6, fontSize: 12 }}>{opt.group}</span>
+                <span className="option-group-label">{opt.group}</span>
                 {isSelected ? <span aria-hidden>✓</span> : null}
               </div>
             )}

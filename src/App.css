@@ -27,3 +27,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.option-group {
+  color: #888;
+}
+
+.option-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.option-group-label {
+  opacity: 0.6;
+  font-size: 12px;
+}
