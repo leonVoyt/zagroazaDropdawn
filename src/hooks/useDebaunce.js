@@ -8,7 +8,6 @@ export const useDebaunce = ({
   searchFn,
   setSearchedOptions,
 }) => {
-  // Debounced search
   const [isSearching, setIsSearching] = useState(false);
   const searchFnRef = useRef(searchFn);
   const getOptionLabelRef = useRef(getOptionLabel);

@@ -13,3 +13,7 @@ export const handleGetOptionLabel = (opt) =>
 export const emitDropdownOpen = (id) => {
   window.dispatchEvent(new CustomEvent(GLOBAL_EVENT_NAME, { detail: { id } }));
 };
+
+export const sleep = (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};

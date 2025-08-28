@@ -42,13 +42,10 @@ export default function Dropdown({
     setSearchedOptions(options ?? []);
   }, [options]);
 
-  // Close if another dropdown opens
   useAnotherDropDawnopen({ idRef, setIsOpen });
 
-  // Handle outside click and focus loss
   useOutsideClick({ isOpen, rootRef, setIsOpen });
 
-  // Open on focus
   function handleFocus() {
     if (disabled) return;
     if (!isOpen) {
@@ -72,8 +69,6 @@ export default function Dropdown({
     buttonRef.current?.focus();
   }
 
-  // Keep latest function props in refs to avoid effect dependency loops
-  // const searchFnRef = useRef(searchFn);
   const { isSearching } = useDebaunce({
     options,
     query,
