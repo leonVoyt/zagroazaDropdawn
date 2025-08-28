@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: 24px;
 }
-.card_wrapper {
+.card__wrapper {
   display: flex;
   gap: 16px;
   text-align: left;
